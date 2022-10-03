@@ -60,4 +60,14 @@ public class Controller {
             address.setText(ad);
         }
     }
+
+    public TextField nameleft;
+    public TextField numberleft;
+    public Text nameright;
+    public Text numberright;
+
+    public void Contact(){
+
+    }
+
 }
