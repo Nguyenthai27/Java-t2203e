@@ -61,13 +61,5 @@ public class Controller {
         }
     }
 
-    public TextField nameleft;
-    public TextField numberleft;
-    public Text nameright;
-    public Text numberright;
-
-    public void Contact(){
-
-    }
 
 }
