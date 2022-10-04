@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="javafx.Ass2Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="name" layoutX="28.0" layoutY="110.0" prefHeight="39.0" prefWidth="216.0" promptText="Name" />
+      <TextField fx:id="email" layoutX="24.0" layoutY="181.0" promptText="Email" />
+      <TextField fx:id="" layoutX="24.0" layoutY="245.0" promptText="Point" />
+      <Text layoutX="342.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List" />
+      <Button layoutX="79.0" layoutY="31.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="261.0" layoutY="31.0" mnemonicParsing="false" text="Button" />
+   </children>
+</Pane>
