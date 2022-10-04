@@ -25,6 +25,6 @@ public class PhoneNumber {
         this.phone = phone;
     }
     public String toString(){
-        return this.getName()+"-"+getPhone()+"/n";
+        return this.getName()+"-"+getPhone();
     }
 }

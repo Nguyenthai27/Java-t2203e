@@ -1,6 +1,10 @@
 package javafx;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableArray;
+import javafx.collections.ObservableList;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -10,7 +14,7 @@ import java.util.ArrayList;
 public class PhoneController {
     public TextField nameleft;
     public TextField numberleft;
-    public Text result;
+    public ListView<PhoneNumber> lv;
     public Text error;
 
 
@@ -22,21 +26,15 @@ public class PhoneController {
                 throw new Exception("Vui long nhap lai");
             }
             phoneList.add(new PhoneNumber(nameleft.getText(),numberleft.getText()));
-            printResult();
-
+            printfResult();
         }catch (Exception e){
             error.setText(e.getMessage());
             error.setVisible(true);
         }
     }
-    public void updatePhone(){
-        for(PhoneNumber p :phoneList){
-            if(p.getName().equals(nameleft.getText())){
-            }
-        }
-    }
-    public void printResult(){
-       String left = "";
-
+    public void printfResult(){
+        ObservableList iteams = FXCollections.observableArrayList();
+        iteams.addAll(phoneList);
+        lv.setItems(iteams);
     }
 }
