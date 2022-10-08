@@ -29,7 +29,7 @@ public class Flight {
         if(number > 0 && !destination.isEmpty()){
             System.out.println(number+","+destination);
         }else{
-            System.out.println(0+",");
+            System.out.println(0+","+"NULL");
         }
 
     }
