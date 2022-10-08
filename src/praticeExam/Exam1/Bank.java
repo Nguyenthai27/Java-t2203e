@@ -1,23 +1,23 @@
-package praticeExam;
+package praticeExam.Exam1;
 
 public class Bank {
-    public double banlance;
+    public double balance;
     public double rate;
     public Bank(){
 
     }
 
     public Bank(double banlance, double rate) {
-        this.banlance = banlance;
+        this.balance = banlance;
         this.rate = rate;
     }
 
     public double getBanlance() {
-        return banlance;
+        return balance;
     }
 
     public void setBanlance(double banlance) {
-        this.banlance = banlance;
+        this.balance = banlance;
     }
 
     public double getRate() {
@@ -27,7 +27,9 @@ public class Bank {
     public void setRate(double rate) {
         this.rate = rate;
     }
-    public void calculateInterest(){
-        double i = 0;
+
+    public double calculateInterest(){
+        return balance * ( rate / 1200);
     }
+
 }
