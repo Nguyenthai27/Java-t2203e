@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
-       System.out.println("Nhap thong tin:");
         Bank b = new Bank();
         System.out.println("Nhap Balance:");
         b.setBanlance(sc.nextInt());
